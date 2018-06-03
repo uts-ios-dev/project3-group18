@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import WPAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    static let baseURLString: String = "https://sk8.tech"
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // WordPress Setup
+        _ = WP(baseURL: AppDelegate.baseURLString)
+        
         return true
     }
 

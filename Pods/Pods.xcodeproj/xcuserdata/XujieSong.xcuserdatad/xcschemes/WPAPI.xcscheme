@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5CDC8A16A9B4FB420070730A2F17BF1B'
+               BlueprintIdentifier = 'F64A08DCEDA572212075F65C8C1BB223'
                BlueprintName = 'WPAPI'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WPAPI.framework'>

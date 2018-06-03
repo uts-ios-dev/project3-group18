@@ -10,6 +10,7 @@
 		3CA1330E20C467470026A06A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1330D20C467470026A06A /* CategoryViewController.swift */; };
 		3CA1331220C4691C0026A06A /* SKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1331020C4691C0026A06A /* SKCategory.swift */; };
 		3CA1331320C4691C0026A06A /* SKPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1331120C4691C0026A06A /* SKPost.swift */; };
+		3CA1331520C46B1E0026A06A /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1331420C46B1D0026A06A /* BannerTableViewCell.swift */; };
 		3CCFB18620C4609100424864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCFB18520C4609100424864 /* AppDelegate.swift */; };
 		3CCFB18B20C4609100424864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCFB18920C4609100424864 /* Main.storyboard */; };
 		3CCFB18D20C4609200424864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCFB18C20C4609200424864 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		3CA1330D20C467470026A06A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3CA1331020C4691C0026A06A /* SKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCategory.swift; sourceTree = "<group>"; };
 		3CA1331120C4691C0026A06A /* SKPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPost.swift; sourceTree = "<group>"; };
+		3CA1331420C46B1D0026A06A /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerTableViewCell.swift; path = "/Users/XujieSong/Desktop/project3-group18/iOS-Ass3/iOS-Ass3/BannerTableViewCell.swift"; sourceTree = "<absolute>"; };
 		3CCFB18220C4609100424864 /* iOS-Ass3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Ass3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCFB18520C4609100424864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CCFB18A20C4609100424864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				3CA1330F20C468E40026A06A /* Model */,
 				3CCFB18520C4609100424864 /* AppDelegate.swift */,
 				3CCFB18920C4609100424864 /* Main.storyboard */,
+				3CA1331420C46B1D0026A06A /* BannerTableViewCell.swift */,
 				3CA1330D20C467470026A06A /* CategoryViewController.swift */,
 				3CCFB18C20C4609200424864 /* Assets.xcassets */,
 				3CCFB18E20C4609200424864 /* LaunchScreen.storyboard */,
@@ -180,11 +183,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Ass3/Pods-iOS-Ass3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/WPAPI/WPAPI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WPAPI.framework",
 			);
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA1331520C46B1E0026A06A /* BannerTableViewCell.swift in Sources */,
 				3CA1330E20C467470026A06A /* CategoryViewController.swift in Sources */,
 				3CA1331220C4691C0026A06A /* SKCategory.swift in Sources */,
 				3CCFB18620C4609100424864 /* AppDelegate.swift in Sources */,

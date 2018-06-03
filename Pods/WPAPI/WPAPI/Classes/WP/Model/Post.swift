@@ -39,7 +39,7 @@ open class Post : Codable, WPAPI {
 	public let pingStatus : String?
 	public var sticky : Bool?
 	public let format : String?
-	public let meta : [String]?
+//    public let meta : [String]?
     public var categories : [Int]?
     public var tags : [Int]?
 
@@ -64,7 +64,7 @@ open class Post : Codable, WPAPI {
         self.pingStatus  = nil
         self.sticky  = nil
         self.format  = nil
-        self.meta  = nil
+//        self.meta  = nil
         self.categories  = categories
         self.tags = nil
     }
@@ -90,7 +90,7 @@ open class Post : Codable, WPAPI {
 		case ping_status = "ping_status"
 		case sticky = "sticky"
 		case format = "format"
-		case meta = "meta"
+//        case meta = "meta"
 		case categories = "categories"
         case tags = "tags"
 	}
@@ -118,7 +118,7 @@ open class Post : Codable, WPAPI {
         pingStatus = try values.decodeIfPresent(String.self, forKey: .ping_status)
         sticky = try values.decodeIfPresent(Bool.self, forKey: .sticky)
         format = try values.decodeIfPresent(String.self, forKey: .format)
-        meta = try values.decodeIfPresent([String].self, forKey: .meta)
+//        meta = try values.decodeIfPresent([String].self, forKey: .meta)
         categories = try values.decodeIfPresent([Int].self, forKey: .categories)
         tags = try values.decodeIfPresent([Int].self, forKey: .tags)
 	}
@@ -146,7 +146,7 @@ open class Post : Codable, WPAPI {
         try container.encodeIfPresent(pingStatus, forKey: .ping_status)
         try container.encodeIfPresent(sticky, forKey: .sticky)
         try container.encodeIfPresent(format, forKey: .format)
-        try container.encodeIfPresent(meta, forKey: .meta)
+//        try container.encodeIfPresent(meta, forKey: .meta)
         try container.encodeIfPresent(categories, forKey: .categories)
         try container.encodeIfPresent(tags, forKey: .tags)
     }

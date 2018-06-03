@@ -8,9 +8,11 @@
 
 import WPAPI
 
-class SKPost : Post {
+class SKNews : Post {
     // Slug for end point
     override public class var endpoint: String {
         return "posts"
     }
+    
+    var featuredMediaURL: String?
 }

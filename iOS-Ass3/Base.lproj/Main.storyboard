@@ -29,7 +29,7 @@
         <!--SK8Tech-->
         <scene sceneID="IqO-ek-Apd">
             <objects>
-                <viewController id="AxE-2W-pYB" customClass="CategoryViewController" customModule="iOS_Ass3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SK8Tech" id="AxE-2W-pYB" customClass="CategoryViewController" customModule="iOS_Ass3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4XT-sx-aUd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                     <navigationItem key="navigationItem" title="SK8Tech" id="8FQ-8m-TVt"/>
                     <connections>
                         <outlet property="tableView" destination="vlF-lc-dSI" id="FRS-os-JQs"/>
-                        <segue destination="1ER-sB-SsB" kind="show" identifier="segueToNewsVC" id="CmQ-LT-cod"/>
+                        <segue destination="1ER-sB-SsB" kind="show" identifier="segueToNewsVC" id="uqK-vx-26w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFy-Uu-YsP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,7 +102,7 @@
         <!--Category Name-->
         <scene sceneID="R1V-z9-LA4">
             <objects>
-                <viewController id="1ER-sB-SsB" customClass="NewsViewController" customModule="iOS_Ass3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Category Name" id="1ER-sB-SsB" customClass="NewsViewController" customModule="iOS_Ass3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TeG-Da-9c9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
                     <navigationItem key="navigationItem" title="Category Name" id="oe4-r9-zxT"/>
                     <connections>
                         <outlet property="tableView" destination="4V3-bh-Jey" id="dZX-4o-BGm"/>
-                        <segue destination="8CK-hL-gDU" kind="show" identifier="segueToDetailVC" id="pFm-Oj-LKQ"/>
+                        <segue destination="8CK-hL-gDU" kind="show" identifier="segueToDetailVC" id="NmN-XL-BlL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6h-W0-EWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

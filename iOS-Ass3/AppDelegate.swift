@@ -13,6 +13,9 @@ import WPAPI
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     static let baseURLString: String = "https://sk8.tech"
+    
+    // Application Settings
+    static let PER_PAGE = 5
 
     var window: UIWindow?
 

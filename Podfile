@@ -10,4 +10,7 @@ target 'iOS-Ass3' do
   # WordPress Related Dependencies
   pod 'WPAPI', :git => 'https://github.com/SK8-PTY-LTD/WPAPI_iOS.git'
 
+  # Loading
+  pod 'SVProgressHUD'
+
 end

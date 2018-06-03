@@ -1,0 +1,6 @@
+framework module WPAPI {
+  umbrella header "WPAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

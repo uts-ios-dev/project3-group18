@@ -74,7 +74,10 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
             1
         ]
         
-        SKCategory.list(page: self.currentPage, perPage: AppDelegate.PER_PAGE, search: self.searchString, include: sampleCategories) { (response: Result<[SKCategory]>) in
+        SKCategory.list(page: self.currentPage,
+                        perPage: AppDelegate.PER_PAGE,
+                        search: self.searchString,
+                        include: sampleCategories) { (response: Result<[SKCategory]>) in
             switch response {
             case .success(let downloadedCategories):
                 

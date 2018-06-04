@@ -71,7 +71,10 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.refreshControl.endRefreshing()
         SVProgressHUD.show(withStatus: "Loading News...")
         
-        SKNews.list(page: self.currentPage, perPage: AppDelegate.PER_PAGE, search: self.searchString, categories: [category.id!]) { (response: Result<[SKNews]>) in
+        SKNews.list(page: self.currentPage,
+                    perPage: AppDelegate.PER_PAGE,
+                    search: self.searchString,
+                    categories: [category.id!]) { (response: Result<[SKNews]>) in
             switch response {
             case .success(let downloadedNews):
                 

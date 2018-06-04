@@ -14,7 +14,7 @@ import SDWebImage
 class CategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchResultsUpdating {
     
     @IBOutlet weak var tableView: UITableView!
-    let refreshControl = UIRefreshControl()
+//    let refreshControl = UIRefreshControl()
     var resultSearchController = UISearchController()
     
     var categoriesArray: [SKCategory] = []
@@ -25,9 +25,9 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
         
         super.viewDidLoad()
         
-        refreshControl.tintColor = UIColor.gray
-        refreshControl.addTarget(self, action: #selector(reloadCategories), for: UIControlEvents.valueChanged)
-        tableView.addSubview(refreshControl)
+//        refreshControl.tintColor = UIColor.gray
+//        refreshControl.addTarget(self, action: #selector(reloadCategories), for: UIControlEvents.valueChanged)
+//        tableView.addSubview(refreshControl)
         
         reloadCategories()
         
@@ -64,7 +64,7 @@ class CategoryViewController: UIViewController, UITableViewDelegate, UITableView
     func downloadCategories() {
         
         // End Pull to refresh & begin loading
-        self.refreshControl.endRefreshing()
+//        self.refreshControl.endRefreshing()
         SVProgressHUD.show(withStatus: "Loading Categories...")
         
         let sampleCategories = [
